@@ -5,7 +5,6 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 import { EffectComposer } from "@react-three/postprocessing";
-// import { BlendFunction, NoiseTexture } from "postprocessing";
 
 import bigFragment from "./shaders/bigSphere/fragment.glsl";
 import bigVertex from "./shaders/bigSphere/vertex.glsl";
@@ -96,7 +95,6 @@ function App() {
         camera={{
           position: [0, 0, 1.3],
           fov: 70,
-          aspect: window.innerWidth / window.innerHeight,
           near: 0.001,
           far: 1000,
         }}
